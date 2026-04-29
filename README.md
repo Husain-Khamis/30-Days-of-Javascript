@@ -43,10 +43,6 @@ Vanilla JavaScript → React → Node.js
 | 24 | Deploy to Vercel | Environment variables, production build | 🔲 |
 | 25 | Notes API | Node.js, Express, REST API | 🔲 |
 | 26 | Full Stack Mini App | React + Express, full stack loop | 🔲 |
-| 27 | Mock Interview | Code walkthrough, interview prep | 🔲 |
-| 28 | Country Explorer | React final exam | 🔲 |
-| 29 | Job Applications | LinkedIn, GitHub profile, apply | 🔲 |
-| 30 | Second Project | Deploy, blog post, month 2 plan | 🔲 |
 
 ## Rules
 - No copy-pasting code I didn't write myself
