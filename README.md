@@ -8,7 +8,7 @@ I wanted to see how far I could push myself if I committed fully to learning som
 Reach a junior level of JavaScript development in 30 days by building one real project every day.
 
 ## Method
-01edu-style — project-based, no tutorial hell, no hand-holding. Read the docs, build something broken, fix it, repeat.
+Project-Based Learning — no tutorial hell, no hand-holding. Read the docs, build something broken, fix it, repeat.
 
 ## Stack
 Vanilla JavaScript → React → Node.js
