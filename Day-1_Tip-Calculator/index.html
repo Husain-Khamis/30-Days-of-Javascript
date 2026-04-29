@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator!</h1>
+        <div id="inputs">
+            <div id="bill-input">
+                <label for="bill">Bill Amount</label>
+                <input type="number" id="bill" />
+            </div>
+            <div id="ppl-input">
+                <label for="people-amount">Number of People</label>
+                <input type="number" id="people-amount" />
+            </div>  
+            <div id="tip-input">   
+            <label for="tip-select">Select a Tip Percentage</label>
+                <select name="tips" id="tip-select">
+                    <option value="">--Please Choose a Tip option--</option>
+                    <option value="10">10%</option>
+                    <option value='15'>15%</option>
+                    <option value="18">18%</option>
+                    <option value="20">20%</option>
+                    <option value="custom">Custom Tip</option>
+                </select>
+            </div>
+        </div>
+        <div id="customTip-group">
+            <label for="custom-tip" id="custom-tip-label" style="display: none;">Custom Tip %</label>
+            <input type="number" id="custom-tip" style="display: none;" />
+        </div>
+        <p id="error-message" style="display: none;  color: red;"></p>
+        <div id="results">
+            <p id="tipResult">Tip per person: <span id="tip-per-person"></span></p>
+            <p id="totalPer">Total per person: <span id="total-per-person"></span></p>
+            <p id="grandTotal">Grand total: <span id="grand-total"></span></p>
+        </div>
+        <button type="button" id="resetBtn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

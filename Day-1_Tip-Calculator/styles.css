@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #03DAC6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#inputs {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 60px;
+    width: 900px;
+}
+
+#results {
+    display: none;
+    border: 2px solid #03DAC6;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #2a2a2a ;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+select {
+    text-align: center;
+}
+
+input, select {
+    background-color:  #2a2a2a;
+    color: #03DAC6;
+    border: 1px solid #03DAC6;
+    text-align: center;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+}
+
+#bill-input, #ppl-input, #tip-input {
+    flex: 1;
+    color: #03DAC6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#tip-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customTip-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 8px;
+}
+
+#custom-tip-label {
+    text-align: center;
+}
+
+#resetBtn {
+    background-color:  #2a2a2a;
+    color:  #03DAC6;
+    border: 1px solid #03DAC6;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resetBtn:hover {
+    background-color: #363636 ;
+    border: 1px solid #0dd4c0;
+    transition: background-color 0.2s ease;
+}
+
+#resetBtn:active{
+    background-color: #252525;
+    border: 1px solid #01c7b3;
+    transition: background-color 0.3s ease;
+}
+
+#results {
+    transition: opacity 0.3s ease;
+}
