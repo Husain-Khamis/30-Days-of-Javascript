@@ -47,6 +47,13 @@ function tipCalc() {
         result.style.display = 'none';
         return;
     }
+
+    if (customTipValue < 0) {
+        errorMessage.textContent = 'Custom Tip Cannot be Negative';
+        errorMessage.style.display = 'block';
+        result.style.display = 'none';
+        return;
+    }
     
     if (isNaN(billvalue) === false && isNaN(tipValue) === false && isNaN(pplValue) === false){
         let billPer = ((billvalue * (tipValue / 100)) + billvalue) / pplValue;
