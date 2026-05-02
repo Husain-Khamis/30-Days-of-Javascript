@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>User Dashboard</h1>
-    <p id="user-list"></p>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+    <div id="filter-input">
+        <div class="filter-group">
+        <label>Filter By a Role</label>
+        <select name="filter" id="filter-list">
+            <option value="">--Select a Filter--</option>
+            <option value="all">All</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            <option value="guest">Guest</option>
+        </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Sort Names or Ages</label>
+            <select name="sort" id="sort-list">
+                <option value="">--Sort By--</option>
+                <option value="nameAZ">Ascending Names</option>
+                <option value="nameZA">Descending Names</option>
+                <option value="ageAsc">Ascending Age</option>
+                <option value="ageDesc">Descending Age</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="isActive" id="isActive-label">Are They Active: </label>
+            <input type="checkbox" id="isActive"/>
+        </div>
+        
+        <div class="filter-group">
+            <label for="countryText" id="countryText-label">Filter by Country Name: </label>
+            <input type="text" id="countryText"/>
+        </div>
+    </div>
+
+    <div id="stats-bar">
+        <p id="total-users"></p>
+        <p id="active-count"></p>
+        <p id="avg-age"></p>
+    </div>
+
+    <div id="user-list">
+    </div>
+       
+    <p id="error-message"></p>
     <script src="script.js"></script>
 </body>
 </html>

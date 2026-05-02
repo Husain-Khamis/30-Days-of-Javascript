@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #02383D;
+    color: #e8e8e8;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #115157;
+    text-align: center;
+    padding: 22px 40px;
+    border-bottom: 2px solid #679BA0;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #e8e8e8;
+    margin-bottom: 16px;
+}
+
+#filter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    background-color: #115157;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+select, input[type="text"] {
+    padding: 8px 12px;
+    background-color: #02383D;
+    border: 1px solid #679BA0;
+    border-radius: 6px;
+    color: #e8e8e8;
+    text-align: center;
+}
+
+#stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 16px;
+    background-color: #115157;
+    border-top: 1px solid #679BA0;
+    border-bottom: 1px solid #679BA0;
+}
+
+#user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #115157;
+    border: 1px solid #02383D;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s; 
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #679BA0;
+}
+
+#error-message {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    font: 1.1rem;
+    color: #6adde7;
+    font-size: xx-large;
+}
