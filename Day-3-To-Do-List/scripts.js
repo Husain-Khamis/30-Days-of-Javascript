@@ -1,4 +1,5 @@
 const errorMessage = document.querySelector("#error-message");
+let draggedId = null;
 
 let tasksArr = []
 
@@ -80,6 +81,30 @@ function renderTasks(arr = tasksArr) {
             editTask(this.dataset.id)
         })
 
+        taskCard.draggable = true;
+        taskCard.dataset.id = arr[i].id;
+
+        taskCard.addEventListener("dragstart", function() {
+            draggedId = this.dataset.id
+        })
+        
+        taskCard.addEventListener("dragover", function(e) {
+            e.preventDefault()
+        })
+
+        taskCard.addEventListener("drop", function() {
+            const targetId = Number(this.dataset.id);
+            const draggedIndex = tasksArr.findIndex(t => t.id === Number(draggedId));
+            const targetIndex = tasksArr.findIndex(t => t.id === targetId);
+
+            const temp = tasksArr[draggedIndex];
+            tasksArr[draggedIndex] = tasksArr[targetIndex];
+            tasksArr[targetIndex] = temp;
+
+            renderTasks()
+            localStore()
+        })
+
         textGroup.appendChild(taskName);
         textGroup.appendChild(status);
         taskCard.appendChild(textGroup);
@@ -87,15 +112,14 @@ function renderTasks(arr = tasksArr) {
         taskCard.appendChild(editBtn);
         taskCard.appendChild(deleteBtn);
         cards.appendChild(taskCard);
+
     }
     const remaining = arr.filter(task => task.status === "Active").length;
     document.getElementById("remaining-tasks").innerText = `${remaining} Tasks Remaining!`;
-    console.log(tasksArr);
 }
 
 function deleteTask(id) {
     tasksArr = tasksArr.filter(task => task.id !== Number(id));
-    console.log(tasksArr)
     renderTasks();
     localStore();
 }
