@@ -20,7 +20,7 @@ Vanilla JavaScript → React → Node.js
 | 01 | Tip Calculator | DOM manipulation, form validation, real-time calculation | ✅ |
 | 02 | User List Dashboard | Arrays, filter, map, reduce, sort | ✅ |
 | 03 | To-Do List | DOM manipulation, localStorage, drag & drop | ✅ |
-| 04 | Weather App | Fetch, Promises, API integration | 🔲 |
+| 04 | Weather App | Fetch, Promises, API integration | ✅ |
 | 05 | Weather App Refactor | Async/await, error handling, debounce | 🔲 |
 | 06 | GitHub User Search | JS exam, async/await | 🔲 |
 | 07 | React To-Do List | React setup, JSX, props, components | 🔲 |
