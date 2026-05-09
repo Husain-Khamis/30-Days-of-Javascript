@@ -2,13 +2,13 @@
 ### by [Husain-Khamis](https://github.com/Husain-Khamis)
 
 ## Why?
-I wanted to see how far I could push myself if I committed fully to learning something in a short time. I already know Go and have some full stack basics — this challenge is about finding out what's possible under pressure.
+I wanted to see how far I could push myself if I committed fully to learning something in a short time. I already know Go and have some full stack basics. This challenge is about finding out what's possible under pressure.
 
 ## Goal
 Reach a junior level of JavaScript development in 30 days by building one real project every day.
 
 ## Method
-Project-Based Learning — no tutorial hell, no hand-holding. Read the docs, build something broken, fix it, repeat.
+Project-Based Learning, no tutorial hell, no hand-holding. Read the docs, build something broken, fix it, repeat.
 
 ## Stack
 Vanilla JavaScript → React → Node.js
@@ -21,14 +21,14 @@ Vanilla JavaScript → React → Node.js
 | 02 | User List Dashboard | Arrays, filter, map, reduce, sort | ✅ |
 | 03 | To-Do List | DOM manipulation, localStorage, drag & drop | ✅ |
 | 04 | Weather App | Fetch, Promises, API integration | ✅ |
-| 05 | Weather App Refactor | Async/await, error handling, debounce | 🔲 |
-| 06 | GitHub User Search | JS exam, async/await | 🔲 |
+| 05 | Weather App Refactor | Async/await, error handling, debounce | ✅ |
+| 06 | GitHub User Search | async/await | 🔲 |
 | 07 | React To-Do List | React setup, JSX, props, components | 🔲 |
 | 08 | Registration Form | useState, controlled inputs, validation | 🔲 |
 | 09 | Movie Search App | useEffect, data fetching, debounce | 🔲 |
 | 10 | Multi-Step Form | Component composition, lifting state | 🔲 |
 | 11 | Movie App + Routing | React Router, URL params | 🔲 |
-| 12 | Rick & Morty Browser | React exam | 🔲 |
+| 12 | Rick & Morty Browser | React | 🔲 |
 | 13 | Theme System | useContext, dark/light mode | 🔲 |
 | 14 | Custom Hooks | useFetch, useLocalStorage, useDebounce | 🔲 |
 | 15 | Shopping Cart | useReducer, complex state | 🔲 |
