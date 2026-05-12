@@ -22,7 +22,11 @@ Vanilla JavaScript → React → Node.js
 | 03 | To-Do List | DOM manipulation, localStorage, drag & drop | ✅ |
 | 04 | Weather App | Fetch, Promises, API integration | ✅ |
 | 05 | Weather App Refactor | Async/await, error handling, debounce | ✅ |
+<<<<<<< HEAD
 | 06 | GitHub User Search | async/await | ✅ |
+=======
+| 06 | GitHub User Search | Async/await | 🔲 |
+>>>>>>> 7551ba880ed49545e17e585abb82162679430df3
 | 07 | React To-Do List | React setup, JSX, props, components | 🔲 |
 | 08 | Registration Form | useState, controlled inputs, validation | 🔲 |
 | 09 | Movie Search App | useEffect, data fetching, debounce | 🔲 |
