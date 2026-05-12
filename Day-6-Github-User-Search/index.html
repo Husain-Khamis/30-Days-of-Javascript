@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>GitHub Username Searcher</h1>
+        <div id="searchArea">
+            <label for="searchBar">Search a GitHub User!</label>
+            <input type="text" id="searchBar" />
+            <button type="submit" id="searchBtn">Search</button>
+        </div>
+
+        <div id="devCard" class="hidden">
+            <img id="avatar" src="" />
+            <p id="usernameArea"></p>
+            <p id="bioArea"></p>
+            <p id="followers"></p>
+
+            <div id="repoButtons">
+                <div>
+                    <label for="mostStared">Most Starred Repository</label>
+                    <button id="mostStared"></button>
+                </div>
+                <div>
+                    <label for="mostForked">Most forked Repository</label>
+                    <button id="mostForked"></button>
+                </div>
+                <div>
+                    <label for="lastPushed">Last Updated Repository</label>
+                    <button id="lastPushed"></button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="errorArea">
+            <p id="errorMessage" class="hidden"></p>
+        </div>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
