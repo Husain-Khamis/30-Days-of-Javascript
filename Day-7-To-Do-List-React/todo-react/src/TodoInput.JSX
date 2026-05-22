@@ -12,14 +12,16 @@ function TodoInput({ onAddTask }) {
     }
 
     return (
-        <>
+        <div className="task-input-row">
             <input
+                className="input-task"
                 value={taskName}
                 onChange={(e) => setTaskName(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' ? handleSubmit() : null}
                 placeholder="Add a task!"
             />
-            <button onClick={handleSubmit}>Add a Task!</button>
-        </>
+            <button className="add-task" onClick={handleSubmit}>Add a Task!</button>
+        </div>
     )
 }
 

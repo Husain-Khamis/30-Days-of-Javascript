@@ -1,16 +1,38 @@
-# React + Vite
+# To-Do-List-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional to-do list built with React
 
-Currently, two official plugins are available:
+## What I Built
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A task management app that lets you add, complete, edit, and delete tasks - with filtering and a live task counter. Built from scratch using React with no component libraries.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add tasks via button or Enter key
+- Mark tasks as complete (strikethrough)
+- Edit tasks inline
+- Delete tasks
+- Filter by All / Active / Completed
+- Live count of remaining tasks
+- Empty state when no tasks match
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- CSS
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+## What I Learned
+
+- How to structure a React app across multiple components
+- How props flow down and events flow up
+- Why state lives in the closest common parent (`App.jsx`)
+- The difference between local state (`isEditing` in `TodoItem`) and shared state (`tasks` in `App`)
+- Why React handles the DOM automatically — you update data, React updates the screen

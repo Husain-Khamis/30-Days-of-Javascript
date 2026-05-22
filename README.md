@@ -23,7 +23,7 @@ Vanilla JavaScript → React → Node.js
 | 04 | Weather App | Fetch, Promises, API integration | ✅ |
 | 05 | Weather App Refactor | Async/await, error handling, debounce | ✅ |
 | 06 | GitHub User Search | Async/await | ✅ |
-| 07 | React To-Do List | React setup, JSX, props, components | 🔲 |
+| 07 | React To-Do List | React setup, JSX, props, components | ✅ |
 | 08 | Registration Form | useState, controlled inputs, validation | 🔲 |
 | 09 | Movie Search App | useEffect, data fetching, debounce | 🔲 |
 | 10 | Multi-Step Form | Component composition, lifting state | 🔲 |
