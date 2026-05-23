@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E6EEC9;
+    color: #35858E;
+    font-family: Georgia, serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #35858E;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #C2D099;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: #35858E;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #E6EEC9;
+    border: 1px solid #7DA78C;
+    border-radius: 4px;
+    color: #35858E;
+    font-family: Georgia, serif;
+    outline: none;
+}
+
+input:focus {
+    border-color: #35858E;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: -4px;
+}
+
+button {
+    background-color: #35858E;
+    color: #E6EEC9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #7DA78C;
+}
+
+button:disabled {
+    background-color: #7DA78C;
+    cursor: not-allowed;
+    border: 1px solid #35858E;
+    color: #E6EEC9;
+}
+
+.success-card {
+    background-color: #7DA78C;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: #E6EEC9;
+}
+
+.success-card h2 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.success-card p {
+    margin-bottom: 8px;
+}

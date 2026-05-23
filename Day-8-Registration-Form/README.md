@@ -1,16 +1,35 @@
-# React + Vite
+# Registration-Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mockup registration form built with React that collects user details including name, last name, password, age, and country, then displays a success card upon valid submission.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 7 controlled form fields managed with a single `useState` object
+- Field validation on blur. Errors appear when you leave a field, not while typing
+- Password strength meter (Weak / Medium / Strong) with color indicators
+- Submit button disabled until all fields are valid
+- Success card displayed on valid submission with name and email summary
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- CSS (custom light theme)
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## What I Learned
+
+- How to manage multiple form fields with a single `useState` object instead of separate state for each field
+- How to validate different fields and compare them, including comparing `confirmPassword` against `password`
+- Why validation fires `onBlur` (when leaving a field) instead of `onChange` (every keystroke), better UX, no errors shown before the user has a chance to type
+- How to use `Object.values().every()` to check if all fields are valid before enabling the submit button
+
+## Challenges
+
+Understanding `onBlur` was the trickiest part. Knowing when it fires vs `onChange` and why that distinction matters for form UX.

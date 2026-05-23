@@ -12,7 +12,7 @@ function FormField({label, type, name, value, onChange, onBlur, error}) {
                 onChange={onChange}
                 onBlur={onBlur} 
             />
-            <p>{error}</p>
+            <p className="error">{error}</p>
         </div>
     )
 }
