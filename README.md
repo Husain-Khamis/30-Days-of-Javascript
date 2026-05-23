@@ -50,4 +50,4 @@ Vanilla JavaScript → React → Node.js
 ## Starting Point
 - Know: Go, basic full stack concepts
 - Learning: JavaScript, React, Node.js
-- Target: Junior frontend developer level
+- Target: Junior Full Stack developer level
