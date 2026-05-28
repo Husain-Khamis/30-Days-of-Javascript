@@ -1,6 +1,6 @@
 export default function DisplayErr({ error }){
     return (
-        <div>
+        <div className="error-message">
             <p>{error.message}</p>
         </div>
     )

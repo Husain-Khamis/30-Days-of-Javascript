@@ -6,6 +6,8 @@ import DisplayErr from './components/DisplayError';
 import LoadingSkeleton from './components/SkeletonCard';
 import './App.css'
 import MovieDetails from './components/MovieDetails';
+import RecentlyViewed from './components/RecentlyView';
+import SkeletonDetails from './components/SkeletonDetails';
 
 
 
@@ -31,6 +33,7 @@ export default function App() {
     async function fetchMovies() {
 
       if (debounce === ""){
+        setMovieData([])
         return
       }
 
@@ -89,6 +92,7 @@ export default function App() {
         const detailedData = await res.json();
 
         setSelectedMovie(detailedData);
+        setHistory(prev => prev.map(m => m.imdbID === detailedData.imdbID ? detailedData : m))
 
       } catch(err){
         if (err.name === "AbortError"){
@@ -109,29 +113,58 @@ export default function App() {
 
   }, [selectedMovie])
 
-  console.log("sidePanel:", sidePanel, "selectedMovie:", selectedMovie)
   return (
-    <>
-    <SearchInput
-      value={searchInput}
-      onChange={setSearchInput} 
-    />
-    {error.type !== null && <DisplayErr error={error} />}
-    {isLoading ? (
-      Array.from({ length: 10}, (_, i) => (
-        <LoadingSkeleton key={i} />
-      ))
-    ) : sidePanel ? (
-      <MovieDetails movie={selectedMovie} />
-    ) : (
+    <div className='app-container'>
+      <header className='app-header'>
+        <h1 className='app-title'>Movie Search</h1>
+        <SearchInput
+          value={searchInput}
+          onChange={(value) => {
+            setSearchInput(value)
+            setError({ type: null, message: null })
+          }}
+        />
+        {searchInput === "" && <p className="app-tagline">Search Millions of movies, TV shows and more!</p>}
+      </header> 
+      {isLoading ? (
+        <div className='movie-grid'>
+        {Array.from({ length: 10}, (_, i) => (
+          <LoadingSkeleton key={i} />
+        ))}
+        </div>
+      ) : sidePanel ? (
+        isLoadingDetails ? (
+          <SkeletonDetails />
+        ) : (
+          <MovieDetails 
+            movie={selectedMovie}
+            onBack={() => setSidePanel(false)}
+          />
+        )
+      ) : error.type ? (
+        <DisplayErr error={error} />
+      ) : (
         <MovieGrid
-         movieData = {movieData}
-         onMovieClick={(movie) => {
+        movieData = {movieData}
+        onMovieClick={(movie) => {
           setSidePanel(true)
           setSelectedMovie(movie)
-         }} 
+          const updatedHistory = [movie, ...history.filter((m) => m.imdbID !== movie.imdbID)].slice(0, 4)
+          setHistory(updatedHistory)
+        }} 
         />
-    )}
-    </>
+      )}
+      {!sidePanel && 
+        <RecentlyViewed
+          history={history}
+          onMovieClick={(movie) => {
+            setSidePanel(true)
+            setSelectedMovie(movie)
+            const updatedHistory = [movie, ...history.filter((m) => m.imdbID !== movie.imdbID)].slice(0, 4)
+            setHistory(updatedHistory)
+          }}
+        />
+      } 
+    </div>
   )
 }

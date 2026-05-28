@@ -1,19 +1,25 @@
-export default function MovieDetails( { movie }) {
+export default function MovieDetails( { movie , onBack}) {
     
     return(
-        <div>
-            <img
-                src={movie.Poster === "N/A" ? "https://placehold.co/300x450?text=No+Image" : movie.Poster }
+        <div className="movie-details-wrapper">
+            <div className="movie-details">
+                <img
+                src={movie.Poster === "N/A" ? "https://placehold.co/300x450?text=No+Image" : movie.Poster}
                 alt={movie.Title}
-            />
-            <p>{movie.Year}</p> 
-            <p>{movie.Plot}</p>
-            <p>{movie.Director}</p>
-            <p>{movie.Actors}</p>
-            <p>{movie.imdbRating}</p>
-            <p>{movie.Runtime}</p>
-            <p>{movie.Type}</p> 
-            <p>{movie.Genre}</p>
+                onError={(e) => e.target.src = "https://placehold.co/300x450?text=No+Image"}
+                /> 
+                <div className="movie-details-info">
+                    <h1>{movie.Title}</h1>
+                    <p>{movie.Year}</p> 
+                    <p>{movie.Plot}</p>
+                    <p><span>Director:</span> {movie.Director}</p>
+                    <p><span>Actors:</span> {movie.Actors}</p>
+                    <p><span>Rating:</span> {movie.imdbRating}</p>
+                    <p><span>Runtime:</span> {movie.Runtime}</p>
+                    <p><span>Genre:</span> {movie.Genre}</p>
+                </div>
+            </div>
+            <button className="back-button" onClick={onBack}>Back</button>
         </div>
     )
 }
