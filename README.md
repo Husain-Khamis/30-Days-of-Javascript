@@ -25,7 +25,7 @@ Vanilla JavaScript → React → Node.js
 | 06 | GitHub User Search | Async/await | ✅ |
 | 07 | React To-Do List | React setup, JSX, props, components | ✅ |
 | 08 | Registration Form | useState, controlled inputs, validation | ✅ |
-| 09 | Movie Search App | useEffect, data fetching, debounce | 🔲 |
+| 09 | Movie Search App | useEffect, data fetching, debounce | ✅ |
 | 10 | Multi-Step Form | Component composition, lifting state | 🔲 |
 | 11 | Movie App + Routing | React Router, URL params | 🔲 |
 | 12 | Rick & Morty Browser | React | 🔲 |
@@ -33,10 +33,10 @@ Vanilla JavaScript → React → Node.js
 | 14 | Custom Hooks | useFetch, useLocalStorage, useDebounce | 🔲 |
 | 15 | Shopping Cart | useReducer, complex state | 🔲 |
 | 16 | Job Application Form | React Hook Form, file validation | 🔲 |
-| 17 | Capstone — Scaffold | Architecture, routing, context setup | 🔲 |
-| 18 | Capstone — Core Feature | Full data flow, API integration | 🔲 |
-| 19 | Capstone — Features Complete | Error, loading, empty states | 🔲 |
-| 20 | Capstone — UI Polish | Responsive design, README | 🔲 |
+| 17 | Capstone, Scaffold | Architecture, routing, context setup | 🔲 |
+| 18 | Capstone, Core Feature | Full data flow, API integration | 🔲 |
+| 19 | Capstone, Features Complete | Error, loading, empty states | 🔲 |
+| 20 | Capstone, UI Polish | Responsive design, README | 🔲 |
 | 21 | Deploy to Vercel | Environment variables, production build | 🔲 |
 | 22 | Notes API | Node.js, Express, REST API | 🔲 |
 | 23 | Full Stack Mini App | React + Express, full stack loop | 🔲 |
