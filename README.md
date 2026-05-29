@@ -26,7 +26,7 @@ Vanilla JavaScript → React → Node.js
 | 07 | React To-Do List | React setup, JSX, props, components | ✅ |
 | 08 | Registration Form | useState, controlled inputs, validation | ✅ |
 | 09 | Movie Search App | useEffect, data fetching, debounce | ✅ |
-| 10 | Multi-Step Form | Component composition, lifting state | 🔲 |
+| 10 | Multi-Step Form | Component composition, lifting state | ✅ |
 | 11 | Movie App + Routing | React Router, URL params | 🔲 |
 | 12 | Rick & Morty Browser | React | 🔲 |
 | 13 | Theme System | useContext, dark/light mode | 🔲 |
