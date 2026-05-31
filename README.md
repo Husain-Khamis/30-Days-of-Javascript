@@ -27,7 +27,7 @@ Vanilla JavaScript → React → Node.js
 | 08 | Registration Form | useState, controlled inputs, validation | ✅ |
 | 09 | Movie Search App | useEffect, data fetching, debounce | ✅ |
 | 10 | Multi-Step Form | Component composition, lifting state | ✅ |
-| 11 | Movie App + Routing | React Router, URL params | 🔲 |
+| 11 | Movie App + Routing | React Router, URL params | ✅ |
 | 12 | Rick & Morty Browser | React | 🔲 |
 | 13 | Theme System | useContext, dark/light mode | 🔲 |
 | 14 | Custom Hooks | useFetch, useLocalStorage, useDebounce | 🔲 |
